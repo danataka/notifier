@@ -8,7 +8,11 @@ class GChat:
         }
         response = requests.post(url, json=json_data)
         return response
-    
+
+class Email:
+    def send(text: str, email: str):
+        print(f"Sent to {email}")
+      
 class Notification:
   def __init__(self, type, config):
     self.type = type
