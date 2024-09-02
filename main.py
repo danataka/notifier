@@ -15,7 +15,7 @@ channels.append(
 
 # Subscription Configuration
 subscription_name = 'projects/cobalt-catalyst-114520/subscriptions/notifications-sub'
-service_account_info = json.load(open("key.json"))
+service_account_info = json.load(open("pubsub-key.json"))
 audience = "https://pubsub.googleapis.com/google.pubsub.v1.Subscriber"
 
 credentials = jwt.Credentials.from_service_account_info(
