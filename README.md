@@ -1,3 +1,3 @@
 # notifier
 
-requires key.json (Service account key for GCP in root)
+requires pubsub-key.json (Service account key for GCP in root)

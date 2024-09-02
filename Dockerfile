@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir --upgrade -r /src/requirements.txt
 
 
 COPY ./*.py /src/
-COPY ./key.json /src/
+COPY ./*-key.json /src/
 
 # 
 
