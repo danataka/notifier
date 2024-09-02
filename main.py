@@ -9,7 +9,7 @@ channels.append(
     notifier.Channel(
         "default",
         [notifier.Notification("gchat","https://chat.googleapis.com/v1/spaces/AAAA5F9mVto/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=EnUegHHKtFNMJ4_pqppfRgwrZnbm7jPt6HASQBOXOEs"),
-         notifier.Notification("email", "agile.guy@hotmail.com")]
+         notifier.Notification("email", "the.daddy.magoo@gmail.com")]
     )
 )
 

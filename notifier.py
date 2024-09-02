@@ -1,4 +1,5 @@
 import requests
+import mailtrap as mt
 import os
 
 class GChat:
@@ -10,9 +11,18 @@ class GChat:
         return response
 
 class Email:
-    def send(text: str, email: str):
-        print(f"Sent to {email}")
-      
+  def send(body:str, toaddress:str):
+    mail = mt.Mail(
+      sender=mt.Address(email="mailtrap@demomailtrap.com", name="notif.ier"),
+      to=[mt.Address(email=f"{toaddress}")],
+      subject="Message from notifier",\
+      text=f"{body}"
+    )
+    token = os.environ.get("mt_token")
+    client = mt.MailtrapClient(token=f"{token}")
+    response = client.send(mail)
+    print(response)
+    
 class Notification:
   def __init__(self, type, config):
     self.type = type
